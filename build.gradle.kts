@@ -1,6 +1,6 @@
 plugins {
     `java-library`
-    id("io.freefair.lombok") version "6.6.3"
+    id("io.freefair.lombok") version "8.0.1"
 }
 
 group = "com.github.blackbaroness"
