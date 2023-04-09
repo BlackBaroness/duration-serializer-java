@@ -2,11 +2,31 @@
 
 Finally, a simple, fast and convenient library for human-readable `Duration` (de)serialization.
 
-There are no any third-party dependencies. Library fits at few KB's.
+There are not any third-party dependencies. Library fits at few KB's.
 
-### Add to your project
+## Import to your project
 
-TODO
+Maven:
+
+```xml
+<dependency>
+    <groupId>io.github.blackbaroness</groupId>
+    <artifactId>duration-serializer</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+Gradle (Groovy SDK):
+
+```groovy
+implementation 'io.github.blackbaroness:duration-serializer:1.0.0'
+```
+
+Gradle (Kotlin SDK):
+
+```kotlin
+implementation("io.github.blackbaroness:duration-serializer:1.0.0")
+```
 
 ### Example usage
 
@@ -55,7 +75,7 @@ schedule(period.toMillis()); // wants millis (like a Timer)
 
 #### Reliability
 
-Most of the project is tested automatically using JUnit 5. 
+Most of the project is tested automatically using JUnit 5.
 In addition, the library tries not to allow null and adheres to immutability.
 
 You can implement your own duration formats. For example, add your own regional language

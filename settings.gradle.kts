@@ -1,2 +1,2 @@
-rootProject.name = "DurationSerializer"
+rootProject.name = "duration-serializer"
 
