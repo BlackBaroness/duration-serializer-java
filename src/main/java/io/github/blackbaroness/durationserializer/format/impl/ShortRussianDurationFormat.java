@@ -6,7 +6,7 @@ public class ShortRussianDurationFormat extends StaticDurationFormat {
         super("нс",
                 "мс",
                 "с",
-                "мин",
+                "м",
                 "ч",
                 "д");
     }
