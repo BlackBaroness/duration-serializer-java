@@ -1,10 +1,10 @@
-package com.github.blackbaroness.durationserializer;
+package io.github.blackbaroness.durationserializer;
 
-import com.github.blackbaroness.durationserializer.format.DurationFormat;
-import com.github.blackbaroness.durationserializer.format.impl.FullWordEnglishDurationFormat;
-import com.github.blackbaroness.durationserializer.format.impl.MediumLengthEnglishDurationFormat;
-import com.github.blackbaroness.durationserializer.format.impl.ShortEnglishDurationFormat;
-import com.github.blackbaroness.durationserializer.format.impl.ShortRussianDurationFormat;
+import io.github.blackbaroness.durationserializer.format.DurationFormat;
+import io.github.blackbaroness.durationserializer.format.impl.FullWordEnglishDurationFormat;
+import io.github.blackbaroness.durationserializer.format.impl.MediumLengthEnglishDurationFormat;
+import io.github.blackbaroness.durationserializer.format.impl.ShortEnglishDurationFormat;
+import io.github.blackbaroness.durationserializer.format.impl.ShortRussianDurationFormat;
 import lombok.experimental.UtilityClass;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;

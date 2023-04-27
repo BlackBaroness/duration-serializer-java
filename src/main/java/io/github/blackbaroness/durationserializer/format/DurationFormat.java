@@ -1,4 +1,4 @@
-package com.github.blackbaroness.durationserializer.format;
+package io.github.blackbaroness.durationserializer.format;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;

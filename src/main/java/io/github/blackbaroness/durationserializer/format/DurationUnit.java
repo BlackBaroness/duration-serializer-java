@@ -1,4 +1,4 @@
-package com.github.blackbaroness.durationserializer.format;
+package io.github.blackbaroness.durationserializer.format;
 
 public enum DurationUnit {
     NANOSECONDS,

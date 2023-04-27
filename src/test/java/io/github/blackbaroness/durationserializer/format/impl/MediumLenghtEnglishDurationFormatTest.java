@@ -1,7 +1,7 @@
-package com.github.blackbaroness.durationserializer.format.impl;
+package io.github.blackbaroness.durationserializer.format.impl;
 
-import com.github.blackbaroness.durationserializer.format.DurationUnit;
-import com.github.blackbaroness.durationserializer.format.InvalidFormatException;
+import io.github.blackbaroness.durationserializer.format.DurationUnit;
+import io.github.blackbaroness.durationserializer.format.InvalidFormatException;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;

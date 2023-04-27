@@ -1,8 +1,8 @@
-package com.github.blackbaroness.durationserializer.format.impl;
+package io.github.blackbaroness.durationserializer.format.impl;
 
-import com.github.blackbaroness.durationserializer.format.DurationFormat;
-import com.github.blackbaroness.durationserializer.format.DurationUnit;
-import com.github.blackbaroness.durationserializer.format.InvalidFormatException;
+import io.github.blackbaroness.durationserializer.format.DurationFormat;
+import io.github.blackbaroness.durationserializer.format.DurationUnit;
+import io.github.blackbaroness.durationserializer.format.InvalidFormatException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Range;
 

@@ -1,8 +1,8 @@
-package com.github.blackbaroness.durationserializer;
+package io.github.blackbaroness.durationserializer;
 
-import com.github.blackbaroness.durationserializer.format.DurationFormat;
-import com.github.blackbaroness.durationserializer.format.DurationUnit;
-import com.github.blackbaroness.durationserializer.format.InvalidFormatException;
+import io.github.blackbaroness.durationserializer.format.DurationFormat;
+import io.github.blackbaroness.durationserializer.format.DurationUnit;
+import io.github.blackbaroness.durationserializer.format.InvalidFormatException;
 import lombok.experimental.UtilityClass;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;

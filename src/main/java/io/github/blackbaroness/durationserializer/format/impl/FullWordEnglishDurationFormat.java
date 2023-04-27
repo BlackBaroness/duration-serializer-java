@@ -1,4 +1,4 @@
-package com.github.blackbaroness.durationserializer.format.impl;
+package io.github.blackbaroness.durationserializer.format.impl;
 
 public class FullWordEnglishDurationFormat extends StaticDurationFormat {
 
