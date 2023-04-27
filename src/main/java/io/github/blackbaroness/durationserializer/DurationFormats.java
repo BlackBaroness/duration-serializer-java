@@ -1,10 +1,7 @@
 package io.github.blackbaroness.durationserializer;
 
 import io.github.blackbaroness.durationserializer.format.DurationFormat;
-import io.github.blackbaroness.durationserializer.format.impl.FullWordEnglishDurationFormat;
-import io.github.blackbaroness.durationserializer.format.impl.MediumLengthEnglishDurationFormat;
-import io.github.blackbaroness.durationserializer.format.impl.ShortEnglishDurationFormat;
-import io.github.blackbaroness.durationserializer.format.impl.ShortRussianDurationFormat;
+import io.github.blackbaroness.durationserializer.format.impl.*;
 import lombok.experimental.UtilityClass;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -17,6 +14,7 @@ public class DurationFormats {
     private final FullWordEnglishDurationFormat fullWordEnglish = new FullWordEnglishDurationFormat();
 
     private final ShortRussianDurationFormat shortRussianDurationFormat = new ShortRussianDurationFormat();
+    private final MediumLenghtRussianDurationFormat mediumLengthRussianDurationFormat = new MediumLenghtRussianDurationFormat();
 
     @Contract(pure = true)
     public @NotNull DurationFormat shortEnglish() {
@@ -36,6 +34,11 @@ public class DurationFormats {
     @Contract(pure = true)
     public @NotNull ShortRussianDurationFormat shortRussian() {
         return shortRussianDurationFormat;
+    }
+
+    @Contract(pure = true)
+    public @NotNull DurationFormat mediumLengthRussian() {
+        return mediumLengthRussianDurationFormat;
     }
 
     @Contract(value = "-> new", pure = true)
