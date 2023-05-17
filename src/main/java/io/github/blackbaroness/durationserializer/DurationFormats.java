@@ -10,11 +10,11 @@ import org.jetbrains.annotations.NotNull;
 public class DurationFormats {
 
     private final ShortEnglishDurationFormat shortEnglish = new ShortEnglishDurationFormat();
-    private final MediumLengthEnglishDurationFormat mediumLengthEnglish = new MediumLengthEnglishDurationFormat();
-    private final FullWordEnglishDurationFormat fullWordEnglish = new FullWordEnglishDurationFormat();
+    private final MediumLengthEnglishDurationFormat mediumEnglish = new MediumLengthEnglishDurationFormat();
+    private final FullWordEnglishDurationFormat fullEnglish = new FullWordEnglishDurationFormat();
 
-    private final ShortRussianDurationFormat shortRussianDurationFormat = new ShortRussianDurationFormat();
-    private final MediumLenghtRussianDurationFormat mediumLengthRussianDurationFormat = new MediumLenghtRussianDurationFormat();
+    private final ShortRussianDurationFormat shortRussian = new ShortRussianDurationFormat();
+    private final MediumLenghtRussianDurationFormat mediumRussian = new MediumLenghtRussianDurationFormat();
 
     @Contract(pure = true)
     public @NotNull DurationFormat shortEnglish() {
@@ -23,26 +23,29 @@ public class DurationFormats {
 
     @Contract(pure = true)
     public @NotNull DurationFormat mediumLengthEnglish() {
-        return mediumLengthEnglish;
+        return mediumEnglish;
     }
 
     @Contract(pure = true)
     public @NotNull DurationFormat fullWordEnglish() {
-        return fullWordEnglish;
+        return fullEnglish;
     }
 
     @Contract(pure = true)
     public @NotNull ShortRussianDurationFormat shortRussian() {
-        return shortRussianDurationFormat;
+        return shortRussian;
     }
 
     @Contract(pure = true)
     public @NotNull DurationFormat mediumLengthRussian() {
-        return mediumLengthRussianDurationFormat;
+        return mediumRussian;
     }
 
     @Contract(value = "-> new", pure = true)
     public @NotNull DurationFormat @NotNull [] allBundled() {
-        return new DurationFormat[]{shortEnglish, mediumLengthEnglish, fullWordEnglish};
+        return new DurationFormat[]{
+            shortEnglish, mediumEnglish, fullEnglish,
+            shortRussian, mediumRussian
+        };
     }
 }

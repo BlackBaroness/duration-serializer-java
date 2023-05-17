@@ -90,7 +90,7 @@ public class DurationSerializer {
         }
 
         throw new InvalidFormatException("Format was not accepted by any of the formats: "
-                + amountString + " " + unitString
+            + amountString + " " + unitString
         );
     }
 

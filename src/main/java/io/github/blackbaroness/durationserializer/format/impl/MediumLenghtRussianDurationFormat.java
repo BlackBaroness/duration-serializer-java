@@ -4,10 +4,10 @@ public class MediumLenghtRussianDurationFormat extends StaticDurationFormat {
 
     public MediumLenghtRussianDurationFormat() {
         super("нсек",
-                "мсек",
-                "сек",
-                "мин",
-                "ч",
-                "дн");
+            "мсек",
+            "сек",
+            "мин",
+            "ч",
+            "дн");
     }
 }

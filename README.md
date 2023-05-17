@@ -9,6 +9,7 @@ There are not any third-party dependencies. Library fits at few KB's.
 Maven:
 
 ```xml
+
 <dependency>
     <groupId>io.github.blackbaroness</groupId>
     <artifactId>duration-serializer</artifactId>
@@ -30,6 +31,7 @@ implementation("io.github.blackbaroness:duration-serializer:2.0.1")
 
 ### Example usage
 
+[//]: # (@formatter:off)
 ```java
 Duration duration = Duration.ofDays(1).plusMinutes(15).plusSeconds(10);
 
@@ -42,6 +44,7 @@ DurationSerializer.deserialize("15 min 5 ns", DurationFormats.shortEnglish());
 // Use a lot of formats at the same time!
 DurationSerializer.deserialize("15 min 30 milliseconds 5 ns", DurationFormats.allBundled());
 ```
+[//]: # (@formatter:on)
 
 ### About this project
 
@@ -56,6 +59,7 @@ And the user can write the duration using their native language.
 What do you like more?
 
 As user:
+
 ```yaml
 # Classic variant
 periodInSeconds: 3630
@@ -65,6 +69,8 @@ period: 1 hour 30 seconds
 ```
 
 As developer:
+
+[//]: # (@formatter:off)
 ```java
 // Classic variant
 schedule(TimeUnit.SECONDS.toMillis(periodInSeconds)); // wants millis (like a Timer)
@@ -72,6 +78,7 @@ schedule(TimeUnit.SECONDS.toMillis(periodInSeconds)); // wants millis (like a Ti
 // With duration serializer
 schedule(period.toMillis()); // wants millis (like a Timer)
 ```
+[//]: # (@formatter:on)
 
 #### Reliability
 
@@ -80,6 +87,16 @@ In addition, the library tries not to allow null and adheres to immutability.
 
 You can implement your own duration formats. For example, add your own regional language
 so that the user can write in a language other than English.
+
+#### Available formats
+
+| Format            | Nanos       | Millis       | Seconds | Minutes | Hours | Days |
+|-------------------|-------------|--------------|---------|---------|-------|------|
+| Short English     | ns          | ms           | s       | min     | h     | d    |
+| Medium English    | nanos       | millis       | sec     | min     | hours | days |
+| Full word English | nanoseconds | milliseconds | seconds | minutes | hours | days |
+| Short Russian     | нс          | мс           | с       | м       | ч     | д    |
+| Medium Russian    | нсек        | мсек         | сек     | мин     | ч     | дн   |
 
 #### Contributing
 

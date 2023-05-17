@@ -4,10 +4,10 @@ public class MediumLengthEnglishDurationFormat extends StaticDurationFormat {
 
     public MediumLengthEnglishDurationFormat() {
         super("nanos",
-                "millis",
-                "sec",
-                "min",
-                "hours",
-                "days");
+            "millis",
+            "sec",
+            "min",
+            "hours",
+            "days");
     }
 }

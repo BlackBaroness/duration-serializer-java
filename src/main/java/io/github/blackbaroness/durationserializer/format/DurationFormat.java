@@ -32,7 +32,7 @@ public interface DurationFormat {
      */
     @Contract(value = "_, _ -> new", pure = true)
     @NotNull Duration deserialize(
-            @NotNull String unitInput,
-            @Range(from = 0, to = Long.MAX_VALUE) long amountInput
+        @NotNull String unitInput,
+        @Range(from = 0, to = Long.MAX_VALUE) long amountInput
     ) throws InvalidFormatException;
 }

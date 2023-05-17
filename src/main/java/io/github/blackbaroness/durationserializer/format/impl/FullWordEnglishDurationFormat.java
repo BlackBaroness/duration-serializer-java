@@ -4,10 +4,10 @@ public class FullWordEnglishDurationFormat extends StaticDurationFormat {
 
     public FullWordEnglishDurationFormat() {
         super("nanoseconds",
-                "milliseconds",
-                "seconds",
-                "minutes",
-                "hours",
-                "days");
+            "milliseconds",
+            "seconds",
+            "minutes",
+            "hours",
+            "days");
     }
 }

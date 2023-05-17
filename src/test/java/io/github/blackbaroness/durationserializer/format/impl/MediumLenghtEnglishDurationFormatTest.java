@@ -1,5 +1,7 @@
 package io.github.blackbaroness.durationserializer.format.impl;
 
+import io.github.blackbaroness.durationserializer.DurationFormats;
+import io.github.blackbaroness.durationserializer.format.DurationFormat;
 import io.github.blackbaroness.durationserializer.format.DurationUnit;
 import io.github.blackbaroness.durationserializer.format.InvalidFormatException;
 import org.junit.jupiter.api.Test;
@@ -10,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MediumLenghtEnglishDurationFormatTest {
 
-    private final MediumLengthEnglishDurationFormat format = new MediumLengthEnglishDurationFormat();
+    private final DurationFormat format = DurationFormats.mediumLengthEnglish();
 
     @Test
     void serialize() {
