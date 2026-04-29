@@ -2,7 +2,7 @@ plugins {
     `java-library`
     `maven-publish`
     signing
-    id("io.freefair.lombok") version "8.0.1"
+    id("io.freefair.lombok") version "9.5.0"
 }
 
 group = "io.github.blackbaroness"
